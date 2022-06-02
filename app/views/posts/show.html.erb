@@ -1,0 +1,16 @@
+<div class="card text-center my-2">
+    <% if notice %>
+    <p class="alert alert-success"><%= notice %></p>
+    <% end %>
+    <div class="card-header">
+        <%= @post.topic%>
+    </div>
+    <div class="card-body">
+      <h5 class="card-title"><%= @post.content%></h5>
+      <p class="card-text"><%= @post.author%></p>
+      <a href="/posts" class="btn btn-secondary">Return</a>
+    </div>
+    <div class="card-footer text-muted">
+        <%= @post.created_at%>
+    </div>
+  </div>

@@ -1,0 +1,27 @@
+<%= form_for @post do |form|%>
+<h1>Update Post</h1>
+<div class="container my-2">
+  <div class="row my-2">
+    <div class="col-lg-4">
+      <%= form.label :topic, class: "form-label"%>
+      <%= form.text_field :topic, class: "form-control"%>
+    </div>
+  </div>
+  <div class="row my-2">
+    <div class="col-lg-6">
+      <%= form.label :content, class: "form-label"%>
+      <%= form.text_field :content, class: "form-control"%>
+    </div>
+  </div>
+  <div class="row my-2">
+    <div class="col-lg-4">
+      <%= form.label :author, class: "form-label"%>
+      <%= form.text_field :author, class: "form-control"%>
+    </div>
+  </div>
+  <div class="field">
+      <%= form.submit%>
+      <a class="btn btn-secondary" href="/posts" role="button">Back</a>
+  </div>
+</div>
+<%end%>
