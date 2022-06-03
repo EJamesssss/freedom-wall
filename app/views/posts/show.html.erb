@@ -1,6 +1,10 @@
 <div class="card text-center my-2">
     <% if notice %>
-    <p class="alert alert-success"><%= notice %></p>
+    <!-- <p class="alert alert-success"><%= notice %></p> -->
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+      <%= notice %>
+     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+   </div>
     <% end %>
     <div class="card-header">
         <%= @post.topic%>
@@ -11,6 +15,6 @@
       <a href="/posts" class="btn btn-secondary">Return</a>
     </div>
     <div class="card-footer text-muted">
-        <%= @post.created_at%>
+        <%= @post.updated_at%>
     </div>
   </div>
