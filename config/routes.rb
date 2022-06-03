@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   # get '/:id/edit', to: 'posts#edit'
   # get '/:id', to: 'posts#show', as: 'post'
   # post '/', to: 'posts#create'
+  root to: 'posts#index'
   resources :posts
 
 end
